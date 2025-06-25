@@ -11,7 +11,7 @@ namespace Committer.API.Controllers;
 public class CalculatorController : ControllerBase
 {
     private readonly ICalculatorService _calculatorService;
-    
+
     /// <summary>
     /// Constructor
     /// </summary>
@@ -20,7 +20,7 @@ public class CalculatorController : ControllerBase
     {
         _calculatorService = calculatorService;
     }
-    
+
     /// <summary>
     /// Adds two numbers
     /// </summary>
@@ -32,7 +32,7 @@ public class CalculatorController : ControllerBase
     {
         return Ok(_calculatorService.Add(a, b));
     }
-    
+
     /// <summary>
     /// Subtracts second number from first number
     /// </summary>
@@ -44,7 +44,7 @@ public class CalculatorController : ControllerBase
     {
         return Ok(_calculatorService.Subtract(a, b));
     }
-    
+
     /// <summary>
     /// Multiplies two numbers
     /// </summary>
@@ -56,7 +56,7 @@ public class CalculatorController : ControllerBase
     {
         return Ok(_calculatorService.Multiply(a, b));
     }
-    
+
     /// <summary>
     /// Divides first number by second number
     /// </summary>

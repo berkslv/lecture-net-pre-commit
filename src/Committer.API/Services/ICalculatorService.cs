@@ -12,7 +12,7 @@ public interface ICalculatorService
     /// <param name="b">Second number</param>
     /// <returns>Sum of the two numbers</returns>
     double Add(double a, double b);
-    
+
     /// <summary>
     /// Subtracts second number from first number
     /// </summary>
@@ -20,7 +20,7 @@ public interface ICalculatorService
     /// <param name="b">Second number</param>
     /// <returns>Difference between the two numbers</returns>
     double Subtract(double a, double b);
-    
+
     /// <summary>
     /// Multiplies two numbers
     /// </summary>
@@ -28,7 +28,7 @@ public interface ICalculatorService
     /// <param name="b">Second number</param>
     /// <returns>Product of the two numbers</returns>
     double Multiply(double a, double b);
-    
+
     /// <summary>
     /// Divides first number by second number
     /// </summary>
