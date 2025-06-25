@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <Target Name="register git hooks" BeforeTargets="Restore;CollectPackageReferences" Condition="'$(ASPNETCORE_ENVIRONMENT)' != 'Production'">
+    <Exec Command="git config core.hooksPath ./.git-hooks" StandardOutputImportance="Low" StandardErrorImportance="High" />
+  </Target>
+
+
+</Project>
